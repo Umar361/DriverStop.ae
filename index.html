@@ -2,8 +2,8 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>DriverStop - 24/7 Car Recovery Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Recovery Service</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,14 +16,13 @@
             accent: '#ffa500',
             accent2: '#f59e0b',
             accent3: '#10b981',
-            lightbg: '#f8fafc',
           }
         }
       }
     }
   </script>
 
-  <!-- FontAwesome Icons -->
+  <!-- FontAwesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -33,113 +32,90 @@
   />
 </head>
 
-<body class="font-sans text-gray-800 bg-lightbg">
+<body class="font-sans text-gray-800">
 
-<!-- NAVIGATION -->
-<nav class="sticky top-0 bg-white shadow-lg z-50">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#home" class="text-2xl font-bold text-primary">DriverStop</a>
-    <ul class="hidden md:flex space-x-8 text-lg">
-      <li><a href="#home" class="hover:text-accent">Home</a></li>
-      <li><a href="#services" class="hover:text-accent">Services</a></li>
-      <li><a href="#faq" class="hover:text-accent">FAQ</a></li>
-      <li><a href="#contact" class="hover:text-accent">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- HERO SECTION -->
-<section id="home" class="relative text-center py-20 bg-cover bg-no-repeat" 
-         style="background-image:url('https://pixabay.com/get/gc5e2a8bb2f3d14b80f5dac18f0f31b2a79bdfcd41bcd8e0d96f5b3c9941a57c754b4eec141d2af4c68be0430bf4df823a5fe6018a4f0763b0b5f620ad5797781_1280.jpg');">
-  <div class="bg-black bg-opacity-50 py-24">
-    <h1 class="text-5xl font-extrabold text-white mb-4">24/7 Car Recovery Across UAE</h1>
-    <p class="text-xl text-white mb-6">Fast, Reliable, and Affordable Roadside Service</p>
-    <a href="#services" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent2 transition">Our Services</a>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="py-20 container mx-auto px-6 text-center">
-  <h2 class="text-4xl font-bold text-primary mb-6">What We Offer</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-      <img src="https://pixabay.com/get/g5513b3e7a1ef4d69f2f06c6dbb8f5c9912e0e0f1af1f09743b7d6b8dbf0e9f61e19ebdff1afb94a5a1dc903c7a58c7db_1280.jpg" alt="Roadside Assistance">
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2">Roadside Assistance</h3>
-        <p>Quick help for breakdowns, dead batteries, and flat tyres.</p>
+  <!-- HEADER -->
+  <nav class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-primary">
+        <span class="mr-2"><i class="fas fa-truck-moving"></i></span>
+        RecoveryPro
       </div>
+      <!-- Navigation -->
+      <ul class="hidden md:flex space-x-8 text-lg font-medium">
+        <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
+        <li><a href="#services" class="hover:text-accent transition">Services</a></li>
+        <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
+        <li><a href="#contact" class="hover:text-accent transition">Contact Us</a></li>
+      </ul>
     </div>
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-      <img src="https://pixabay.com/get/g34d8ace3a5e625fc6e6ceb3aacefa0b9ca1d78fa3e7e4b92af9d1b7ecb7f4aaef21899b62f6f43ec1d2047fc6c3798b6_1280.jpg" alt="Accident Recovery">
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2">Accident Recovery</h3>
-        <p>We safely tow vehicles after collisions and breakdowns.</p>
-      </div>
-    </div>
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-      <img src="https://pixabay.com/get/gf83e2cc43135865779acfd63548d3d1c1d9632b4686a01ac1c34ce638f6b67631e3b0258a8d07fa5280b1db0a993e8ce_1280.jpg" alt="Long Distance Transport">
-      <div class="p-6">
-        <h3 class="text-2xl font-bold mb-2">Long Distance Transport</h3>
-        <p>Secure, reliable transport across cities and regions.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </nav>
 
-<!-- FAQ -->
-<section id="faq" class="py-20 bg-white">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold text-primary mb-6">Frequently Asked Questions</h2>
-    <div class="max-w-3xl mx-auto space-y-4">
-      <div class="border p-4 rounded-lg">
-        <button class="w-full text-left font-semibold faq-btn">What areas do you cover?</button>
-        <div class="mt-2 hidden faq-content">
-          <p>We cover all major cities and surrounding regions across the UAE.</p>
+  <!-- HERO -->
+  <section id="home" class="relative pt-24 pb-16 bg-cover bg-center" 
+           style="background-image: url('https://pixabay.com/get/gc5e2a8bb2f3d14b80f5dac18f0f31b2a79bdfcd41bcd8e0d96f5b3c9941a57c754b4eec141d2af4c68be0430bf4df823a5fe6018a4f0763b0b5f620ad5797781_1280.jpg');">
+    <div class="bg-black bg-opacity-50 w-full h-full absolute inset-0"></div>
+
+    <div class="relative container mx-auto px-6 text-center text-white">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+        24/7 Emergency Response Available
+      </h2>
+      <p class="text-xl md:text-2xl mb-6">
+        Stranded? Get Fast, Reliable Car Recovery To Any Destination
+      </p>
+      <p class="max-w-2xl mx-auto text-lg opacity-90 mb-8">
+        Professional recovery trucks ready to transport your broken-down
+        vehicle wherever you need it. No stress, no delays—just dependable
+        service when you need it most.
+      </p>
+
+      <div class="space-x-4 mb-4">
+        <a href="#contact" class="bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent2 transition">
+          Call Now for Help
+        </a>
+        <a href="#services" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          View Our Services
+        </a>
+      </div>
+
+      <p class="text-sm opacity-80 mt-4 font-medium">
+        Quick dispatch • Safe transport • Transparent pricing
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <!-- Rapid Response -->
+        <div class="flex flex-col items-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mb-4">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Rapid Response</h3>
+          <p>Quick dispatch to your location</p>
+        </div>
+        <!-- Any Destination -->
+        <div class="flex flex-col items-center">
+          <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center text-2xl mb-4">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Any Destination</h3>
+          <p>We transport where you need to go</p>
+        </div>
+        <!-- Professional Care -->
+        <div class="flex flex-col items-center">
+          <div class="w-16 h-16 bg-accent3 text-white rounded-full flex items-center justify-center text-2xl mb-4">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Professional Care</h3>
+          <p>Expert drivers, secure handling</p>
         </div>
       </div>
-      <div class="border p-4 rounded-lg">
-        <button class="w-full text-left font-semibold faq-btn">How quickly do you respond?</button>
-        <div class="mt-2 hidden faq-content">
-          <p>Average response time under 30 minutes in primary zones.</p>
-        </div>
-      </div>
-      <div class="border p-4 rounded-lg">
-        <button class="w-full text-left font-semibold faq-btn">Is towing covered by insurance?</button>
-        <div class="mt-2 hidden faq-content">
-          <p>Many plans include coverage; we can assist with claims.</p>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-20 bg-lightbg">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold text-primary mb-6">Contact Us</h2>
-
-    <form action="https://formsubmit.co/your@email.com" method="POST"
-          class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-      <input type="hidden" name="_captcha" value="false">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <input type="text" name="name" placeholder="Your Name*" required class="border p-3 rounded">
-        <input type="tel" name="phone" placeholder="Phone Number*" required class="border p-3 rounded">
-      </div>
-      <input type="email" name="email" placeholder="Email*" required class="border p-3 w-full rounded mt-4">
-      <textarea name="message" rows="4" placeholder="Message*" required class="border p-3 w-full rounded mt-4"></textarea>
-      <button type="submit" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent mt-6 transition">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<!-- FAQ Toggle Script -->
-<script>
-  document.querySelectorAll('.faq-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.nextElementSibling.classList.toggle('hidden');
-    });
-  });
-</script>
+  </section>
 
 </body>
 </html>
