@@ -1,127 +1,1780 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Car Recovery Service</title>
+<html class="h-full" lang="en"><head>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossOrigin="anonymous"
+    />
+    <link
+      id="google-fonts-link"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e98006f77.js"
+      crossOrigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>:root { --accent-color: #0D7A9F; --accent2-color: #A3E4F7; --accent3-color: #05B3E8; --accent4-color: #085F7A; --primary-color: #159FCB; --dark-text-color: #1A1A1A; --gray-text-color: #6B7280; --button-padding-x: 20px; --button-padding-y: 12px; --font-family-body: 'Roboto', sans-serif; --light-text-color: #FFFFFF; --dark-border-color: #2A2A2A; --light-border-color: #E5E7EB; --font-family-heading: 'Poppins', sans-serif; --button-rounded-radius: 8px; --dark-background-color: #0F2027; --light-background-color: #FFFFFF; --medium-background-color: #F0F9FC; --primary-button-text-color: #FFFFFF; --secondary-button-bg-color: #FFFFFF; --secondary-button-text-color: #159FCB; --primary-button-hover-bg-color: #1287B0; --primary-button-hover-text-color: #F0F0F0; --secondary-button-hover-bg-color: #F5F5F5; --secondary-button-hover-text-color: #1287B0; }</style>
+    <style>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#004e92',
-            accent: '#03a9f4',
-            darkbg: '#0f172a',
-            lighttxt: '#f8fafc',
-          }
-        }
-      }
-    }
-  </script>
+.hovered-element {
+  outline: #3871E0 dashed 2px;
+}
 
-  <!-- FontAwesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-pEYy2WvPd0SdV/YqgSEF4iB1E1p1dF6vTGHTvP7R+5Cwcr9VMnF7XNqk5i11J6nMC9q4nGkrF0+P0jKsv4qg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-</head>
-<body class="font-sans text-gray-800">
+.clicked-element {
+  outline: #3871E0 solid 2px;
+}
 
-  <!-- HEADER -->
-  <nav class="fixed top-0 left-0 right-0 bg-white shadow z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+.clicked-code-section {
+  border: #3B82F6 solid 2px;
+}
+</style>
+    
+    <title>DriverStop - Reliable Car Recovery Services</title><meta name="description" content="DriverStop offers professional car recovery services, transporting vehicles safely to the desired destination in case of breakdowns. Contact us for prompt assistance."><meta name="language" content="en"><meta property="og:title" content="DriverStop - Reliable Car Recovery Services"><meta property="og:description" content="DriverStop provides trusted car recovery services, ensuring your vehicle is safely handled and transported during breakdown situations."><meta property="twitter:card" content="summary"><meta name="twitter:title" content="DriverStop - Reliable Car Recovery Services"><meta name="twitter:description" content="Trust DriverStop for professional car recovery solutions. We help transport breakdown vehicles safely and efficiently to your chosen location.">
+  </head><body class="h-full bg-white">
+    <div class="frame-root">
+      <div class="frame-content">
+        <div class="[font-family:var(--font-family-body)]"><div><header id="global-header" class="code-section bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between">
       <!-- Logo -->
-      <div class="text-2xl font-bold text-primary">
-        <span class="mr-2"><i class="fas fa-truck-moving"></i></span>
-        RecoveryPro
-      </div>
-      <!-- Navigation -->
-      <ul class="hidden md:flex space-x-8 text-lg font-medium">
-        <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
-        <li><a href="#services" class="hover:text-accent transition">Services</a></li>
-        <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
-        <li><a href="#contact" class="hover:text-accent transition">Contact Us</a></li>
-      </ul>
+      <a href="#" class="flex-shrink-0">
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/d9342fa8-bd0c-40c9-d7e8-f7cee9d9f000/publicContain" alt="DriverStop Logo" class="h-28 py-2" data-logo="">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="#about" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300">About Us</a>
+        <a href="#services" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300">Services</a>
+        <a href="#faq" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300">FAQ</a>
+        <a href="#contact" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300">Contact Us</a>
+        <a href="tel:+1234567890" class="bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-6 py-3 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-semibold hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 transform hover:scale-105 shadow-lg">Call Now</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button data-landingsite-mobile-menu-toggle="" class="lg:hidden text-[var(--dark-text-color)] p-2">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
     </div>
-  </nav>
 
-  <!-- HERO with overlay -->
-  <section id="home" class="relative pt-24 pb-20 bg-cover bg-center" 
-           style="background-image: url('/mnt/data/Screenshot 2025-12-15 at 13.23.08.png');">
-    <!-- Semi-dark overlay -->
-    <div class="absolute inset-0 bg-black/60"></div>
+    <!-- Mobile Navigation -->
+    <nav data-landingsite-mobile-menu="" class="hidden lg:hidden pb-4">
+      <div class="flex flex-col space-y-4">
+        <a href="#about" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300 py-2">About Us</a>
+        <a href="#services" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300 py-2">Services</a>
+        <a href="#faq" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300 py-2">FAQ</a>
+        <a href="#contact" class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-[var(--font-family-body)] transition-colors duration-300 py-2">Contact Us</a>
+        <a href="tel:+1234567890" class="bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-6 py-3 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-semibold hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 text-center">Call Now</a>
+      </div>
+    </nav>
+  </div>
+</header>
+</div><div><section class="code-section relative bg-[var(--dark-background-color)] overflow-hidden" id="sx1jdve">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0">
+    <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/3c2ee8a8-d557-4d9e-6583-8a4b868a7200/publicContain" alt="Brookfield, Scotland, UK, July 11th 2024, Car being recovered after breakdown in the rural countryside" class="w-full h-full object-cover" data-media="{&quot;id&quot;:&quot;2161692045&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#202020] via-[#202020dd] to-transparent"></div>
+  </div>
 
-    <div class="relative container mx-auto px-6 text-white">
-      <!-- Badge -->
-      <div class="inline-block bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm mb-4">
-        <i class="fas fa-check-circle mr-2"></i>24/7 Emergency Response Available
+  <!-- Content -->
+  <div class="container mx-auto px-4 py-20 lg:py-32 relative z-10">
+    <div class="max-w-3xl">
+      <!-- Trust Badge -->
+      <div class="inline-flex items-center bg-[var(--accent-color)] text-[var(--light-text-color)] px-4 py-2 rounded-full mb-6 shadow-lg">
+        <i class="fas fa-shield-check mr-2"></i>
+        <span class="font-[var(--font-family-body)] font-semibold text-sm">24/7 Emergency Response Available</span>
       </div>
 
-      <!-- Headline -->
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 max-w-3xl">
-        Stranded? Get Fast, Reliable <span class="text-accent">Car Recovery To Any Destination</span>
+      <!-- Hero Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-6 leading-tight">
+        Stranded? Get Fast, Reliable Car Recovery
+        <span class="text-[var(--accent-color)]">To Any Destination</span>
       </h1>
 
-      <!-- Sub-text -->
-      <p class="text-lg sm:text-xl opacity-90 max-w-2xl mb-8">
-        Professional recovery trucks ready to transport your broken-down vehicle wherever you need it. 
-        No stress, no delays—just dependable service when you need it most.
+      <!-- Subheadline -->
+      <p class="text-lg sm:text-xl text-[var(--light-text-color)] mb-8 font-[var(--font-family-body)] leading-relaxed opacity-90">
+        Professional recovery trucks ready to transport your broken-down vehicle
+        wherever you need it. No stress, no delays—just dependable service when
+        you need it most.
       </p>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-wrap gap-4 items-center mb-6">
-        <a href="#contact" class="bg-accent px-6 py-3 rounded-lg text-white font-semibold hover:bg-accent/90 transition">
-          <i class="fas fa-phone-alt mr-2"></i>Call Now for Help
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a href="tel:+1234567890" class="inline-flex items-center justify-center bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-all duration-300 transform hover:scale-105 shadow-2xl">
+          <i class="fas fa-phone mr-3"></i>
+          Call Now for Help
         </a>
-        <a href="#services" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-          View Our Services <i class="fas fa-arrow-right ml-2"></i>
+        <a href="#services" class="inline-flex items-center justify-center bg-[var(--secondary-button-bg-color)] text-[var(--secondary-button-text-color)] px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[var(--secondary-button-hover-bg-color)] transition-all duration-300 shadow-lg">
+          View Our Services
+          <i class="fas fa-arrow-right ml-3"></i>
         </a>
       </div>
 
-      <!-- Pricing/benefits small line -->
-      <p class="text-sm opacity-80 flex items-center gap-2 mb-10">
-        <i class="fas fa-check-circle text-accent"></i>
+      <!-- Microcopy -->
+      <p class="text-sm text-[var(--light-text-color)] opacity-75 font-[var(--font-family-body)]">
+        <i class="fas fa-check-circle text-[var(--accent3-color)] mr-2"></i>
         Quick dispatch • Safe transport • Transparent pricing
       </p>
 
-      <!-- Features icons row -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
-        <div class="flex items-start space-x-3">
-          <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center text-lg">
-            <i class="fas fa-clock"></i>
+      <!-- Key Features -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-[var(--primary-color)] rounded-lg flex items-center justify-center mr-4">
+            <i class="fas fa-clock text-[var(--light-text-color)] text-xl"></i>
           </div>
-          <div class="">
-            <h3 class="font-bold text-lg">Rapid Response</h3>
-            <p class="text-sm opacity-90">Quick dispatch to your location</p>
-          </div>
-        </div>
-        <div class="flex items-start space-x-3">
-          <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center text-lg">
-            <i class="fas fa-map-marked-alt"></i>
-          </div>
-          <div class="">
-            <h3 class="font-bold text-lg">Any Destination</h3>
-            <p class="text-sm opacity-90">We transport where you need to go</p>
+          <div>
+            <h3 class="font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-1">
+              Rapid Response
+            </h3>
+            <p class="text-sm text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+              Quick dispatch to your location
+            </p>
           </div>
         </div>
-        <div class="flex items-start space-x-3">
-          <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center text-lg">
-            <i class="fas fa-user-shield"></i>
+
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-[var(--accent-color)] rounded-lg flex items-center justify-center mr-4">
+            <i class="fas fa-map-marked-alt text-[var(--light-text-color)] text-xl"></i>
           </div>
-          <div class="">
-            <h3 class="font-bold text-lg">Professional Care</h3>
-            <p class="text-sm opacity-90">Expert drivers, secure handling</p>
+          <div>
+            <h3 class="font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-1">
+              Any Destination
+            </h3>
+            <p class="text-sm text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+              We transport where you need to go
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-[var(--accent3-color)] rounded-lg flex items-center justify-center mr-4">
+            <i class="fas fa-user-shield text-[var(--light-text-color)] text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-1">
+              Professional Care
+            </h3>
+            <p class="text-sm text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+              Expert drivers, secure handling
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-</body>
-</html>
+  <!-- Decorative Wave -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full h-auto">
+      <path fill="var(--light-background-color)" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="code-section bg-[var(--light-background-color)] py-20 lg:py-28" id="stlhuuo">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center bg-[var(--primary-color)] text-[var(--light-text-color)] px-4 py-2 rounded-full mb-4">
+        <i class="fas fa-cog mr-2"></i>
+        <span class="font-[var(--font-family-body)] font-semibold text-sm">Simple Process</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+        Get Back on Track in 3 Easy Steps
+      </h2>
+      <p class="text-lg text-[var(--gray-text-color)] font-[var(--font-family-body)]">
+        Our streamlined process ensures your vehicle gets the help it needs
+        quickly and efficiently
+      </p>
+    </div>
+
+    <!-- Process Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
+      <!-- Step 1 -->
+      <div class="relative">
+        <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <!-- Step Number -->
+          <div class="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent2-color)] rounded-full flex items-center justify-center shadow-lg">
+            <span class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)]">1</span>
+          </div>
+
+          <!-- Icon -->
+          <div class="w-16 h-16 bg-[var(--light-background-color)] rounded-full flex items-center justify-center mb-6 mt-4">
+            <i class="fas fa-phone-alt text-3xl text-[var(--primary-color)]"></i>
+          </div>
+
+          <!-- Content -->
+          <h3 class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+            Contact Us
+          </h3>
+          <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] leading-relaxed mb-4">
+            Call or submit a request with your location and vehicle details. We
+            respond immediately.
+          </p>
+          <a href="/request-service" class="inline-flex items-center text-[var(--primary-color)] font-[var(--font-family-body)] font-semibold hover:text-[var(--accent-color)] transition-colors duration-300">
+            Start Here
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative">
+        <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <!-- Step Number -->
+          <div class="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-[var(--accent-color)] to-[var(--accent4-color)] rounded-full flex items-center justify-center shadow-lg">
+            <span class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)]">2</span>
+          </div>
+
+          <!-- Icon -->
+          <div class="w-16 h-16 bg-[var(--light-background-color)] rounded-full flex items-center justify-center mb-6 mt-4">
+            <i class="fas fa-truck text-3xl text-[var(--accent-color)]"></i>
+          </div>
+
+          <!-- Content -->
+          <h3 class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+            We Dispatch
+          </h3>
+          <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] leading-relaxed mb-4">
+            Our nearest recovery truck is dispatched to your location with an
+            estimated arrival time.
+          </p>
+          <div class="inline-flex items-center text-[var(--gray-text-color)] font-[var(--font-family-body)] font-semibold">
+            <i class="fas fa-check-circle text-[var(--accent3-color)] mr-2"></i>
+            Track in real-time
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative">
+        <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <!-- Step Number -->
+          <div class="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-[var(--accent3-color)] to-[var(--primary-color)] rounded-full flex items-center justify-center shadow-lg">
+            <span class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)]">3</span>
+          </div>
+
+          <!-- Icon -->
+          <div class="w-16 h-16 bg-[var(--light-background-color)] rounded-full flex items-center justify-center mb-6 mt-4">
+            <i class="fas fa-map-marker-alt text-3xl text-[var(--accent3-color)]"></i>
+          </div>
+
+          <!-- Content -->
+          <h3 class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+            Safe Delivery
+          </h3>
+          <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] leading-relaxed mb-4">
+            Your vehicle is securely loaded and transported to your chosen
+            destination safely.
+          </p>
+          <div class="inline-flex items-center text-[var(--gray-text-color)] font-[var(--font-family-body)] font-semibold">
+            <i class="fas fa-shield-check text-[var(--accent3-color)] mr-2"></i>
+            Fully insured
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Bar -->
+    <div class="mt-16 text-center">
+      <div class="inline-flex flex-col sm:flex-row items-center gap-4 bg-white p-6 rounded-2xl shadow-lg">
+        <div class="text-left">
+          <p class="text-sm text-[var(--gray-text-color)] font-[var(--font-family-body)] mb-1">
+            Need help right now?
+          </p>
+          <p class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)]">
+            Call us 24/7
+          </p>
+        </div>
+        <a href="/contact" class="bg-[var(--accent-color)] text-[var(--light-text-color)] px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold hover:bg-[var(--accent4-color)] transition-all duration-300 shadow-lg">
+          <i class="fas fa-phone mr-2"></i>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="code-section relative bg-white py-16 sm:py-24 overflow-hidden" id="sz62fdp8s">
+  <div id="services">
+    <!-- Background Decorative Elements -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[var(--primary-color)] opacity-5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-[var(--accent-color)] opacity-5 rounded-full blur-3xl"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center bg-[var(--accent-color)] text-[var(--light-text-color)] px-4 py-2 rounded-full mb-4">
+          <i class="fas fa-wrench mr-2"></i>
+          <span class="font-[var(--font-family-body)] font-semibold text-sm">Our Services</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+          Complete Recovery Solutions for Every Situation
+        </h2>
+        <p class="text-lg text-[var(--gray-text-color)] font-[var(--font-family-body)]">
+          From roadside breakdowns to accident recovery, we handle it all with
+          professional care
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- Service 1 -->
+        <div class="group bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/df18c346-265c-40c3-7236-032d5fa19600/public" alt="Tow truck towing broken down car from accident on road" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-media="{&quot;id&quot;:&quot;1096708968&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#202020cc] to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <div class="w-12 h-12 bg-[var(--primary-color)] rounded-lg flex items-center justify-center">
+                <i class="fas fa-car-crash text-[var(--light-text-color)] text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-3">
+              Breakdown Recovery
+            </h3>
+            <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] mb-4 leading-relaxed">
+              Vehicle won't start? Engine trouble? We'll get your car to your
+              mechanic or home safely.
+            </p>
+            <a href="#contact" class="inline-flex items-center text-[var(--primary-color)] font-[var(--font-family-body)] font-semibold hover:text-[var(--accent-color)] transition-colors duration-300">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="group bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/edd33db0-43f5-47a8-2856-05652881fa00/public" alt="A roadside scene depicting a car with a technical issue being assisted by a towing vehicle, with warning triangles set up for safety" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-media="{&quot;id&quot;:&quot;2185128211&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#202020cc] to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <div class="w-12 h-12 bg-[var(--accent-color)] rounded-lg flex items-center justify-center">
+                <i class="fas fa-exclamation-triangle text-[var(--light-text-color)] text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-3">
+              Accident Recovery
+            </h3>
+            <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] mb-4 leading-relaxed">
+              After an accident, we handle your vehicle with care and transport
+              it to your preferred location.
+            </p>
+            <a href="#contact" class="inline-flex items-center text-[var(--primary-color)] font-[var(--font-family-body)] font-semibold hover:text-[var(--accent-color)] transition-colors duration-300">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="group bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/05c498d2-78c8-4c26-4db7-e2e514d64d00/publicContain" alt="Calgary, Alberta, Canada. Jul 12, 2025. A white W.S. Towing flatbed truck hauling a white minivan on a city street, showcasing roadside assistance and urban transportation." class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-media="{&quot;id&quot;:&quot;2224841626&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#202020cc] to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <div class="w-12 h-12 bg-[var(--accent3-color)] rounded-lg flex items-center justify-center">
+                <i class="fas fa-truck-loading text-[var(--light-text-color)] text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-3">
+              Long Distance Transport
+            </h3>
+            <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] mb-4 leading-relaxed">
+              Need to move your vehicle across cities? We provide secure
+              long-distance transportation.
+            </p>
+            <a href="#contact" class="inline-flex items-center text-[var(--primary-color)] font-[var(--font-family-body)] font-semibold hover:text-[var(--accent-color)] transition-colors duration-300">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="group bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/912066c0-4037-4f7b-0eb1-3200f9e80a00/publicContain" alt="Moscow, Russia - September 16, 2024: Red car loaded onto a tow truck. Towing cars violating parking rules. Close-up" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-media="{&quot;id&quot;:&quot;2192152260&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#202020cc] to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <div class="w-12 h-12 bg-[var(--accent2-color)] rounded-lg flex items-center justify-center">
+                <i class="fas fa-clock text-[var(--light-text-color)] text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-3">
+              24/7 Emergency Service
+            </h3>
+            <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] mb-4 leading-relaxed">
+              Stranded at night or on weekends? Our round-the-clock service is
+              always available for you.
+            </p>
+            <a href="#contact" class="inline-flex items-center text-[var(--primary-color)] font-[var(--font-family-body)] font-semibold hover:text-[var(--accent-color)] transition-colors duration-300">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="group bg-[var(--light-background-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c1e8ebad-7f3c-453d-cec3-0441b67b4d00/public" alt="Carriage of a small minibus on the platform tow truck, back view." class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-media="{&quot;id&quot;:&quot;2203774899&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#202020cc] to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <div class="w-12 h-12 bg-[var(--accent4-color)] rounded-lg flex items-center justify-center">
+                <i class="fas fa-van-shuttle text-[var(--light-text-color)] text-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-3">
+              Heavy Vehicle Recovery
+            </h3>
+            <p class="text-[var(--gray-text-color)] font-[var(--font-family-body)] mb-4 leading-relaxed">
+              Vans, SUVs, and larger vehicles? We have the equipment to handle
+              vehicles of all sizes.
+            </p>
+            <a href="#contact" class="inline-flex items-center text-[var(--primary-color)] font-[var(--font-family-body)] font-semibold hover:text-[var(--accent-color)] transition-colors duration-300">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="group bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent2-color)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="p-8 h-full flex flex-col justify-center items-center text-center">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6">
+              <i class="fas fa-question text-3xl text-[var(--primary-color)]"></i>
+            </div>
+            <h3 class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-4">
+              Custom Requirements?
+            </h3>
+            <p class="text-[var(--light-text-color)] font-[var(--font-family-body)] mb-6 leading-relaxed opacity-90">
+              Have a unique situation? Contact us to discuss specialized
+              recovery solutions.
+            </p>
+            <a href="#contact" class="inline-flex items-center bg-white text-[var(--primary-color)] px-6 py-3 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold hover:bg-[var(--light-background-color)] transition-all duration-300 shadow-lg">
+              Get in Touch
+              <i class="fas fa-comments ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="code-section relative overflow-hidden bg-gradient-to-br from-[var(--medium-background-color)] via-white to-[var(--medium-background-color)] py-20" id="s5o1d4u">
+  <div id="about"></div>
+
+  <div class="absolute inset-0 bg-gradient-to-br from-[var(--medium-background-color)] to-white opacity-50"></div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block mb-4 px-6 py-2 bg-[var(--primary-color)]/10 rounded-full border border-[var(--primary-color)]/20">
+        <span class="text-[var(--primary-color)] text-sm font-semibold tracking-wide uppercase">About DriverStop</span>
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+        Your Trusted Partner in
+        <span class="text-[var(--primary-color)]">Vehicle Recovery</span>
+      </h2>
+      <p class="text-lg text-[var(--gray-text-color)] max-w-3xl mx-auto">
+        Professional, reliable, and available when you need us most
+      </p>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+      <!-- Image Side -->
+      <div class="relative group">
+        <div class="absolute inset-0 bg-gradient-to-tr from-[var(--primary-color)]/20 to-transparent rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
+        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/fc188b0f-1eaa-4b5f-7093-4f5af860d600/public" alt="A transport worker stands next to an open truck door, ready to load a vehicle onto the trailer at a logistics site during the day." data-media="{&quot;id&quot;:&quot;2225234538&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}" class="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:-rotate-1 transition-all duration-500">
+
+        <!-- Floating Stats Card -->
+        <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-2xl p-6 border border-[var(--light-border-color)] transform hover:scale-105 transition-all duration-300">
+          <div class="flex items-center gap-4">
+            <div class="bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] text-white w-14 h-14 rounded-lg flex items-center justify-center">
+              <i class="fas fa-trophy text-2xl"></i>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-[var(--dark-text-color)]">
+                10+
+              </div>
+              <div class="text-sm text-[var(--gray-text-color)]">
+                Years Experience
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Side -->
+      <div>
+        <h3 class="text-3xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-6">
+          Why Choose DriverStop?
+        </h3>
+        <p class="text-[var(--gray-text-color)] text-lg mb-8 leading-relaxed">
+          Since our establishment, DriverStop has been dedicated to providing
+          reliable, professional car recovery services when you need them most.
+          We're more than just a tow truck company – we're your roadside
+          partner, committed to getting you back on the road safely and quickly.
+        </p>
+
+        <!-- Feature List -->
+        <div class="space-y-6">
+          <div class="flex items-start gap-4 group">
+            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i class="fas fa-shield-check text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[var(--dark-text-color)] mb-2 text-lg">
+                Licensed &amp; Insured
+              </h4>
+              <p class="text-[var(--gray-text-color)]">
+                Fully certified with comprehensive insurance coverage for your
+                peace of mind
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 group">
+            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i class="fas fa-users text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[var(--dark-text-color)] mb-2 text-lg">
+                Expert Team
+              </h4>
+              <p class="text-[var(--gray-text-color)]">
+                Highly trained professionals with years of experience in vehicle
+                recovery
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 group">
+            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i class="fas fa-truck-fast text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[var(--dark-text-color)] mb-2 text-lg">
+                Rapid Response
+              </h4>
+              <p class="text-[var(--gray-text-color)]">
+                Average response time of 30 minutes or less in service areas
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 group">
+            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i class="fas fa-handshake text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-[var(--dark-text-color)] mb-2 text-lg">
+                Customer First
+              </h4>
+              <p class="text-[var(--gray-text-color)]">
+                Transparent pricing, friendly service, and satisfaction
+                guaranteed
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-[var(--primary-color)] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[var(--primary-button-hover-bg-color)] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <span>Get in Touch</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+      <div class="bg-white rounded-2xl p-6 text-center border border-[var(--light-border-color)] shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-calendar-check text-2xl text-white"></i>
+        </div>
+        <div class="text-3xl font-bold text-[var(--dark-text-color)] mb-2">
+          24/7
+        </div>
+        <div class="text-[var(--gray-text-color)] text-sm">
+          Available Support
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center border border-[var(--light-border-color)] shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-car text-2xl text-white"></i>
+        </div>
+        <div class="text-3xl font-bold text-[var(--dark-text-color)] mb-2">
+          50K+
+        </div>
+        <div class="text-[var(--gray-text-color)] text-sm">
+          Vehicles Recovered
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center border border-[var(--light-border-color)] shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-smile text-2xl text-white"></i>
+        </div>
+        <div class="text-3xl font-bold text-[var(--dark-text-color)] mb-2">
+          98%
+        </div>
+        <div class="text-[var(--gray-text-color)] text-sm">
+          Customer Satisfaction
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 text-center border border-[var(--light-border-color)] shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+        <div class="w-16 h-16 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-clock text-2xl text-white"></i>
+        </div>
+        <div class="text-3xl font-bold text-[var(--dark-text-color)] mb-2">
+          30min
+        </div>
+        <div class="text-[var(--gray-text-color)] text-sm">
+          Avg Response Time
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Wave -->
+  <div class="absolute bottom-0 left-0 w-full">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+      <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--medium-background-color)" fill-opacity="0.3"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="code-section relative py-16 sm:py-24 bg-gradient-to-br from-[var(--medium-background-color)] via-white to-[var(--medium-background-color)] overflow-hidden" id="s9ug1nk">
+  <div id="faq">
+    <!-- Decorative Background Elements -->
+    <div class="absolute top-20 left-10 w-64 h-64 bg-[var(--primary-color)]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-80 h-80 bg-[var(--accent2-color)]/10 rounded-full blur-3xl"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div class="inline-block mb-4 px-6 py-2 bg-[var(--primary-color)]/10 rounded-full border border-[var(--primary-color)]/20">
+          <span class="text-[var(--primary-color)] text-sm font-semibold tracking-wide uppercase">FAQ</span>
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+          Frequently Asked
+          <span class="text-[var(--primary-color)]">Questions</span>
+        </h2>
+        <p class="text-lg text-[var(--gray-text-color)] max-w-3xl mx-auto">
+          Everything you need to know about our car recovery services
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <!-- FAQ Container -->
+        <div class="space-y-4" data-landingsite-faq="">
+          <!-- FAQ Item 1 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                How much does car recovery cost?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              Our pricing depends on several factors including distance, vehicle
+              type, and time of service. We offer transparent, upfront pricing
+              with no hidden fees. Standard local tows typically start at
+              $75-$125. We provide a detailed quote before any service begins,
+              and we accept all major payment methods including insurance
+              claims.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                What areas do you cover?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              We provide comprehensive coverage throughout the metropolitan area
+              and surrounding regions within a 50-mile radius. Our dispatch
+              center can quickly determine if your location is within our
+              service area. We also offer long-distance towing for specialized
+              situations. Call us to verify coverage for your specific location.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                How quickly can you respond to my call?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              Our average response time is 30 minutes or less within our primary
+              service area. We prioritize emergency situations and dispatch the
+              nearest available unit immediately. Response times may vary during
+              peak hours, severe weather, or in remote locations. We'll provide
+              an accurate ETA when you call and keep you updated on our arrival
+              status.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                What types of vehicles can you recover?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              We can recover virtually any vehicle including cars, SUVs, vans,
+              motorcycles, and light trucks. Our fleet includes various tow
+              truck types including flatbed, wheel-lift, and heavy-duty recovery
+              vehicles. We handle luxury vehicles, classic cars, and specialty
+              vehicles with extra care. Contact us for specific requirements for
+              commercial vehicles or unique situations.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                Do you provide 24/7 service?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              Yes! DriverStop operates 24 hours a day, 7 days a week, 365 days a
+              year. Breakdowns don't follow a schedule, and neither do we.
+              Whether it's 3 PM or 3 AM, on a holiday or weekend, our team is
+              ready to assist you. Our phone lines are always staffed by live
+              operators who can dispatch help immediately.
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                Will my insurance cover the towing cost?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              Many insurance policies and roadside assistance plans include
+              towing coverage. We work with all major insurance companies and
+              can bill them directly in most cases. We'll provide you with all
+              necessary documentation for reimbursement if needed. Contact your
+              insurance provider to verify your coverage details, or we can help
+              you understand your policy during the service call.
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                Can I ride with my vehicle in the tow truck?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              Yes, in most cases, you and one passenger can ride in the tow
+              truck cab with our driver. However, local regulations and
+              insurance policies may have restrictions. For safety reasons, pets
+              and additional passengers may need alternative transportation. Our
+              driver will inform you of the specific policies when they arrive
+              at your location.
+            </div>
+          </div>
+
+          <!-- FAQ Item 8 -->
+          <div class="bg-white rounded-xl shadow-md border border-[var(--light-border-color)] overflow-hidden hover:shadow-xl transition-all duration-300" data-landingsite-faq-item="">
+            <div class="flex items-center justify-between p-6 cursor-pointer group" data-landingsite-faq-question="">
+              <h3 class="text-lg font-semibold text-[var(--dark-text-color)] pr-8 group-hover:text-[var(--primary-color)] transition-colors duration-300">
+                What should I do while waiting for the tow truck?
+              </h3>
+              <i class="fa-regular fa-chevron-down text-[var(--primary-color)] text-xl transform transition-transform duration-300"></i>
+            </div>
+            <div class="px-6 pb-6 text-[var(--gray-text-color)] leading-relaxed" data-landingsite-faq-answer="">
+              Safety first! If possible, move your vehicle to a safe location
+              away from traffic. Turn on hazard lights, and if you have them,
+              place reflective triangles or flares. Stay inside your vehicle if
+              you're on a busy road. Gather important items and documents from
+              your car. Our dispatcher will provide specific safety instructions
+              based on your situation when you call.
+            </div>
+          </div>
+        </div>
+
+        <!-- Still Have Questions CTA -->
+        <div class="mt-12 text-center bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)] rounded-2xl p-8 sm:p-10 text-white shadow-2xl">
+          <i class="fas fa-headset text-5xl mb-4 opacity-90"></i>
+          <h3 class="text-2xl font-bold mb-3">Still Have Questions?</h3>
+          <p class="text-white/90 mb-6 max-w-xl mx-auto">
+            Our friendly team is here to help 24/7. Give us a call and we'll
+            answer any questions you have.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="tel:+1234567890" class="inline-flex items-center gap-2 bg-white text-[var(--primary-color)] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <i class="fas fa-phone"></i>
+              <span>Call Now</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transform hover:scale-105 transition-all duration-300">
+              <i class="fas fa-envelope"></i>
+              <span>Send Message</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="code-section relative py-16 sm:py-24 bg-gradient-to-br from-[var(--dark-background-color)] to-[var(--accent4-color)] overflow-hidden" id="s02lxm">
+  <div id="contact">
+    <!-- Background Decorative Elements -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[var(--medium-background-color)] via-transparent to-[var(--medium-background-color)] opacity-40"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[var(--primary-color)]/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-[var(--accent2-color)]/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div class="inline-block mb-4 px-6 py-2 bg-[var(--primary-color)]/10 rounded-full border border-[var(--primary-color)]/20">
+          <span class="text-[var(--primary-color)] text-sm font-semibold tracking-wide uppercase">Contact Us</span>
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+          Get in <span class="text-[var(--primary-color)]">Touch</span>
+        </h2>
+        <p class="text-lg text-[var(--gray-text-color)] max-w-3xl mx-auto">
+          Need immediate assistance? Fill out the form or call us directly
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 max-w-7xl mx-auto">
+        <!-- Contact Info Column -->
+        <div class="lg:col-span-2 space-y-8">
+          <!-- Emergency CTA -->
+          <div class="bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-2xl p-8 text-white shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <i class="fas fa-phone-volume text-xl"></i>
+              </div>
+              <div>
+                <div class="text-sm opacity-90">24/7 Emergency Hotline</div>
+                <div class="text-2xl font-bold">Call Now</div>
+              </div>
+            </div>
+            <a href="tel:+1234567890" class="block text-3xl font-bold mb-3 hover:text-white/80 transition-colors">
+              (123) 456-7890
+            </a>
+            <p class="text-sm text-white/80">
+              Available 24 hours a day, 7 days a week for emergency assistance
+            </p>
+          </div>
+
+          <!-- Contact Methods -->
+          <div class="space-y-6">
+            <!-- Email -->
+            <div class="flex items-start gap-4 group">
+              <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <i class="fas fa-envelope text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-semibold text-[var(--dark-text-color)] mb-1 text-lg">
+                  Email Us
+                </h3>
+                <a href="mailto:support@driverstop.com" class="text-[var(--primary-color)] hover:underline">
+                  support@driverstop.com
+                </a>
+                <p class="text-sm text-[var(--gray-text-color)] mt-1">
+                  We respond within 24 hours
+                </p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="flex items-start gap-4 group">
+              <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <i class="fas fa-location-dot text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-semibold text-[var(--dark-text-color)] mb-1 text-lg">
+                  Visit Our Office
+                </h3>
+                <p class="text-[var(--gray-text-color)]">
+                  123 Recovery Road<br>
+                  Towing City, TC 12345
+                </p>
+                <p class="text-sm text-[var(--gray-text-color)] mt-1">
+                  Mon-Fri: 9AM - 6PM
+                </p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="flex items-start gap-4 group">
+              <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-xl flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <i class="fas fa-clock text-xl"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-semibold text-[var(--dark-text-color)] mb-1 text-lg">
+                  Service Hours
+                </h3>
+                <p class="text-[var(--gray-text-color)]">
+                  24/7 Emergency Service<br>
+                  Always Available
+                </p>
+                <p class="text-sm text-[var(--gray-text-color)] mt-1">
+                  No extra charges for nights or weekends
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="bg-[var(--medium-background-color)] rounded-2xl p-6 border border-[var(--light-border-color)]">
+            <h3 class="font-semibold text-[var(--dark-text-color)] mb-4">
+              Follow Us
+            </h3>
+            <div class="flex gap-3">
+              <a href="#" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md">
+                <i class="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md">
+                <i class="fab fa-twitter text-lg"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md">
+                <i class="fab fa-instagram text-lg"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white transform hover:scale-110 transition-all duration-300 shadow-md">
+                <i class="fab fa-linkedin-in text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="lg:col-span-3">
+          <div class="bg-white rounded-2xl shadow-2xl p-8 sm:p-10 border border-[var(--light-border-color)]">
+            <div class="mb-8">
+              <h3 class="text-2xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-2">
+                Send Us a Message
+              </h3>
+              <p class="text-[var(--gray-text-color)]">
+                Fill out the form below and we'll get back to you as soon as
+                possible
+              </p>
+            </div>
+
+            <form data-landingsite-contact-form="" class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <!-- Name -->
+                <div>
+                  <label for="name" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                    Your Name *
+                  </label>
+                  <input type="text" id="name" name="name" required="" class="w-full px-4 py-3 border-2 border-[var(--light-border-color)] rounded-lg focus:outline-none focus:border-[var(--primary-color)] transition-colors duration-300" placeholder="John Doe">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <label for="phone" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                    Phone Number *
+                  </label>
+                  <input type="tel" id="phone" name="phone" required="" class="w-full px-4 py-3 border-2 border-[var(--light-border-color)] rounded-lg focus:outline-none focus:border-[var(--primary-color)] transition-colors duration-300" placeholder="(123) 456-7890">
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="email" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                  Email Address *
+                </label>
+                <input type="email" id="email" name="email" required="" class="w-full px-4 py-3 border-2 border-[var(--light-border-color)] rounded-lg focus:outline-none focus:border-[var(--primary-color)] transition-colors duration-300" placeholder="john@example.com">
+              </div>
+
+              <!-- Service Type -->
+              <div>
+                <label for="service" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                  Service Type
+                </label>
+                <select id="service" name="service" class="w-full px-4 py-3 border-2 border-[var(--light-border-color)] rounded-lg focus:outline-none focus:border-[var(--primary-color)] transition-colors duration-300">
+                  <option>Emergency Towing</option>
+                  <option>Roadside Assistance</option>
+                  <option>Vehicle Transport</option>
+                  <option>Accident Recovery</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-sm font-semibold text-[var(--dark-text-color)] mb-2">
+                  Your Message *
+                </label>
+                <textarea id="message" name="message" required="" rows="5" class="w-full px-4 py-3 border-2 border-[var(--light-border-color)] rounded-lg focus:outline-none focus:border-[var(--primary-color)] transition-colors duration-300 resize-none" placeholder="Tell us about your situation..."></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="w-full bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)] text-white px-8 py-4 rounded-lg font-semibold hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3 group">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform duration-300"></i>
+                </button>
+                <p class="text-sm text-[var(--gray-text-color)] text-center mt-3">
+                  We'll respond within 24 hours
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Quick Response Note -->
+          <div class="mt-6 flex items-center gap-3 bg-[var(--accent3-color)]/10 border border-[var(--accent3-color)]/20 rounded-xl p-4">
+            <i class="fas fa-circle-check text-[var(--accent3-color)] text-2xl"></i>
+            <p class="text-sm text-[var(--dark-text-color)]">
+              <strong>Quick Response:</strong> For urgent matters, please call
+              our 24/7 hotline for immediate assistance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="code-section bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent2-color)] py-20 lg:py-28 relative overflow-hidden" id="sh9h2l">
+  <!-- Decorative Elements -->
+  <div class="absolute top-0 left-0 w-full h-full opacity-10">
+    <div class="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
+    <div class="absolute bottom-20 right-20 w-48 h-48 border-4 border-white rounded-full"></div>
+    <div class="absolute top-1/2 left-1/3 w-20 h-20 border-4 border-white rounded-full"></div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Content -->
+      <div>
+        <div class="inline-flex items-center bg-white bg-opacity-20 backdrop-blur-sm text-[var(--light-text-color)] px-4 py-2 rounded-full mb-6">
+          <i class="fas fa-star mr-2"></i>
+          <span class="font-[var(--font-family-body)] font-semibold text-sm">Why DriverStop</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-6 leading-tight">
+          Your Trusted Partner in Vehicle Recovery
+        </h2>
+
+        <p class="text-lg text-[var(--light-text-color)] opacity-90 font-[var(--font-family-body)] mb-8 leading-relaxed">
+          When your car breaks down, you need more than just a tow truck—you
+          need reliability, professionalism, and peace of mind. Here's what sets
+          us apart:
+        </p>
+
+        <!-- Feature List -->
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-bolt text-[var(--accent-color)] text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+                Fast Response Times
+              </h3>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+                We understand urgency. Our trucks are strategically positioned
+                to reach you quickly, minimizing your wait time.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-certificate text-[var(--accent3-color)] text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+                Professional Drivers
+              </h3>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+                Our experienced team handles your vehicle with expert care,
+                ensuring safe loading and secure transport.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-dollar-sign text-[var(--accent-color)] text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+                Transparent Pricing
+              </h3>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+                No hidden fees or surprise charges. You'll know the cost upfront
+                before we dispatch our truck.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 shadow-lg">
+              <i class="fas fa-headset text-[var(--primary-color)] text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+                24/7 Customer Support
+              </h3>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)]">
+                Breakdowns don't follow a schedule. Neither do we. Our support
+                team is available round the clock.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-10">
+          <a href="/request-service" class="inline-flex items-center bg-white text-[var(--primary-color)] px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[var(--light-background-color)] transition-all duration-300 shadow-2xl transform hover:scale-105">
+            <i class="fas fa-paper-plane mr-3"></i>
+            Request Service Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Content - Stats -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Stat 1 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-truck text-3xl text-[var(--primary-color)]"></i>
+          </div>
+          <div class="text-4xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+            24/7
+          </div>
+          <p class="text-[var(--light-text-color)] opacity-90 font-[var(--font-family-body)] font-semibold">
+            Always Available
+          </p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-clock text-3xl text-[var(--accent-color)]"></i>
+          </div>
+          <div class="text-4xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+            Fast
+          </div>
+          <p class="text-[var(--light-text-color)] opacity-90 font-[var(--font-family-body)] font-semibold">
+            Quick Response
+          </p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-shield-alt text-3xl text-[var(--accent3-color)]"></i>
+          </div>
+          <div class="text-4xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+            Safe
+          </div>
+          <p class="text-[var(--light-text-color)] opacity-90 font-[var(--font-family-body)] font-semibold">
+            Secure Transport
+          </p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-users text-3xl text-[var(--accent2-color)]"></i>
+          </div>
+          <div class="text-4xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-2">
+            Pro
+          </div>
+          <p class="text-[var(--light-text-color)] opacity-90 font-[var(--font-family-body)] font-semibold">
+            Expert Team
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Wave -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full h-auto">
+      <path fill="white" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="code-section py-20 sm:py-28 bg-gradient-to-br from-white via-[var(--medium-background-color)] to-white relative overflow-hidden" id="s7xvjdn">
+  <!-- Decorative Elements -->
+  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[var(--primary-color)] to-transparent"></div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block mb-4 px-6 py-2 bg-[var(--primary-color)]/10 rounded-full border border-[var(--primary-color)]/20">
+        <span class="text-[var(--primary-color)] text-sm font-semibold tracking-wide uppercase">Testimonials</span>
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-4">
+        What Our <span class="text-[var(--primary-color)]">Customers Say</span>
+      </h2>
+      <p class="text-lg text-[var(--gray-text-color)] max-w-3xl mx-auto">
+        Don't just take our word for it - hear from those who've experienced our
+        service
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg border border-[var(--light-border-color)] hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <!-- Star Rating -->
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+        </div>
+
+        <!-- Quote -->
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-6 italic">
+          "Broke down at midnight on the highway. DriverStop arrived in under 30
+          minutes and got my car to the garage safely. Incredibly professional
+          and friendly service!"
+        </p>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pt-6 border-t border-[var(--light-border-color)]">
+          <div class="w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+            SM
+          </div>
+          <div>
+            <div class="font-semibold text-[var(--dark-text-color)]">
+              Sarah Mitchell
+            </div>
+            <div class="text-sm text-[var(--gray-text-color)]">
+              Verified Customer
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg border border-[var(--light-border-color)] hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <!-- Star Rating -->
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+        </div>
+
+        <!-- Quote -->
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-6 italic">
+          "After an accident, I was stressed about getting my damaged car towed.
+          The team handled everything with care and kept me informed. Couldn't
+          ask for better service."
+        </p>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pt-6 border-t border-[var(--light-border-color)]">
+          <div class="w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+            JC
+          </div>
+          <div>
+            <div class="font-semibold text-[var(--dark-text-color)]">
+              James Chen
+            </div>
+            <div class="text-sm text-[var(--gray-text-color)]">
+              Verified Customer
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg border border-[var(--light-border-color)] hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <!-- Star Rating -->
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+        </div>
+
+        <!-- Quote -->
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-6 italic">
+          "Needed my classic car transported across state. They treated it like
+          their own, secured it perfectly, and delivered on time. Highly
+          recommend for any vehicle type!"
+        </p>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pt-6 border-t border-[var(--light-border-color)]">
+          <div class="w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+            LR
+          </div>
+          <div>
+            <div class="font-semibold text-[var(--dark-text-color)]">
+              Linda Rodriguez
+            </div>
+            <div class="text-sm text-[var(--gray-text-color)]">
+              Verified Customer
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg border border-[var(--light-border-color)] hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <!-- Star Rating -->
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+        </div>
+
+        <!-- Quote -->
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-6 italic">
+          "Best towing company I've dealt with. Clear pricing, no hidden fees,
+          and excellent communication throughout. Will definitely use them again
+          if needed."
+        </p>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pt-6 border-t border-[var(--light-border-color)]">
+          <div class="w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+            MP
+          </div>
+          <div>
+            <div class="font-semibold text-[var(--dark-text-color)]">
+              Michael Park
+            </div>
+            <div class="text-sm text-[var(--gray-text-color)]">
+              Verified Customer
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg border border-[var(--light-border-color)] hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <!-- Star Rating -->
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+        </div>
+
+        <!-- Quote -->
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-6 italic">
+          "Stranded with a flat battery in a parking lot. They arrived quickly,
+          jump-started my car, and made sure everything was working before
+          leaving. True professionals!"
+        </p>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pt-6 border-t border-[var(--light-border-color)]">
+          <div class="w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+            EW
+          </div>
+          <div>
+            <div class="font-semibold text-[var(--dark-text-color)]">
+              Emma Wilson
+            </div>
+            <div class="text-sm text-[var(--gray-text-color)]">
+              Verified Customer
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg border border-[var(--light-border-color)] hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <!-- Star Rating -->
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+          <i class="fas fa-star text-[var(--accent-color)] text-lg"></i>
+        </div>
+
+        <!-- Quote -->
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-6 italic">
+          "My SUV broke down with my kids in the car. The driver was so kind and
+          reassuring, got us safely sorted. This company really cares about
+          their customers."
+        </p>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pt-6 border-t border-[var(--light-border-color)]">
+          <div class="w-12 h-12 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+            DT
+          </div>
+          <div>
+            <div class="font-semibold text-[var(--dark-text-color)]">
+              David Thompson
+            </div>
+            <div class="text-sm text-[var(--gray-text-color)]">
+              Verified Customer
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust Indicators -->
+    <div class="mt-16 bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)] rounded-2xl p-8 sm:p-12 text-center text-white shadow-2xl">
+      <div class="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div>
+          <div class="text-4xl sm:text-5xl font-bold mb-2">4.9/5</div>
+          <div class="text-white/90 text-sm">Average Rating</div>
+          <div class="flex justify-center gap-1 mt-2">
+            <i class="fas fa-star text-[var(--accent-color)]"></i>
+            <i class="fas fa-star text-[var(--accent-color)]"></i>
+            <i class="fas fa-star text-[var(--accent-color)]"></i>
+            <i class="fas fa-star text-[var(--accent-color)]"></i>
+            <i class="fas fa-star text-[var(--accent-color)]"></i>
+          </div>
+        </div>
+        <div>
+          <div class="text-4xl sm:text-5xl font-bold mb-2">1,200+</div>
+          <div class="text-white/90 text-sm">Happy Customers</div>
+          <i class="fas fa-users text-3xl mt-2 opacity-80"></i>
+        </div>
+        <div>
+          <div class="text-4xl sm:text-5xl font-bold mb-2">98%</div>
+          <div class="text-white/90 text-sm">Would Recommend</div>
+          <i class="fas fa-thumbs-up text-3xl mt-2 opacity-80"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="code-section bg-[var(--light-background-color)] py-20 lg:py-28" id="sv92vzp">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto">
+      <!-- Main CTA Box -->
+      <div class="bg-gradient-to-br from-[var(--dark-background-color)] to-[#2a2a2a] rounded-3xl overflow-hidden shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+          <!-- Left Content -->
+          <div class="p-8 lg:p-12">
+            <div class="inline-flex items-center bg-[var(--accent-color)] text-[var(--light-text-color)] px-4 py-2 rounded-full mb-6">
+              <i class="fas fa-phone-volume mr-2"></i>
+              <span class="font-[var(--font-family-body)] font-semibold text-sm">Emergency Assistance</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-family-heading)] font-bold text-[var(--light-text-color)] mb-4 leading-tight">
+              Stranded? We're Here to Help
+            </h2>
+
+            <p class="text-lg text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)] mb-8 leading-relaxed">
+              Don't let a breakdown ruin your day. Our team is ready to dispatch
+              immediately and get your vehicle to safety.
+            </p>
+
+            <!-- Features -->
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-[var(--accent3-color)] text-xl mr-3"></i>
+                <span class="text-[var(--light-text-color)] font-[var(--font-family-body)]">Available 24 hours a day, 7 days a week</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-[var(--accent3-color)] text-xl mr-3"></i>
+                <span class="text-[var(--light-text-color)] font-[var(--font-family-body)]">Fast response and professional service</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-[var(--accent3-color)] text-xl mr-3"></i>
+                <span class="text-[var(--light-text-color)] font-[var(--font-family-body)]">Transport to any destination you choose</span>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/request-service" class="inline-flex items-center justify-center bg-[var(--accent-color)] text-[var(--light-text-color)] px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[var(--accent4-color)] transition-all duration-300 shadow-xl transform hover:scale-105">
+                <i class="fas fa-plus-circle mr-3"></i>
+                Request Recovery
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center bg-white text-[var(--dark-text-color)] px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[var(--light-background-color)] transition-all duration-300 shadow-lg">
+                <i class="fas fa-comments mr-3"></i>
+                Contact Us
+              </a>
+            </div>
+
+            <!-- Microcopy -->
+            <p class="text-sm text-[var(--light-text-color)] opacity-60 font-[var(--font-family-body)] mt-6">
+              <i class="fas fa-info-circle mr-2"></i>
+              Get a free quote before we dispatch
+            </p>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative h-full min-h-[400px] lg:min-h-[600px]">
+            <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c669480c-de96-42c4-32fd-340bec9cd400/public" alt="Quintana Roo, Mexico - May 16, 2017: Rescue service truck Sterling 360 at the interurban road." class="w-full h-full object-cover" data-media="{&quot;id&quot;:&quot;947128184&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#202020] via-transparent to-transparent lg:hidden"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Info Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+          <div class="w-16 h-16 bg-[var(--light-background-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-map-marked-alt text-3xl text-[var(--primary-color)]"></i>
+          </div>
+          <h3 class="text-lg font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-2">
+            Wide Coverage Area
+          </h3>
+          <p class="text-sm text-[var(--gray-text-color)] font-[var(--font-family-body)]">
+            Serving multiple regions with quick dispatch times
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+          <div class="w-16 h-16 bg-[var(--light-background-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-file-invoice-dollar text-3xl text-[var(--accent-color)]"></i>
+          </div>
+          <h3 class="text-lg font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-2">
+            Upfront Pricing
+          </h3>
+          <p class="text-sm text-[var(--gray-text-color)] font-[var(--font-family-body)]">
+            Clear quotes with no hidden charges or fees
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+          <div class="w-16 h-16 bg-[var(--light-background-color)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-tools text-3xl text-[var(--accent3-color)]"></i>
+          </div>
+          <h3 class="text-lg font-[var(--font-family-heading)] font-bold text-[var(--dark-text-color)] mb-2">
+            Modern Equipment
+          </h3>
+          <p class="text-sm text-[var(--gray-text-color)] font-[var(--font-family-body)]">
+            Well-maintained trucks for safe vehicle transport
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div><div><footer id="global-footer" class="code-section bg-[var(--dark-background-color)] text-[var(--light-text-color)] pt-16 pb-8">
+  <div class="container mx-auto px-4">
+    <!-- Main Footer Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <!-- Company Info -->
+      <div>
+        <a href="#" class="inline-block mb-6">
+          <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/d9342fa8-bd0c-40c9-d7e8-f7cee9d9f000/publicContain" alt="DriverStop Logo" class="h-28 py-2" data-logo="">
+        </a>
+        <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)] mb-6 leading-relaxed">
+          Professional car recovery services available 24/7. We're here to help
+          when you need us most.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-[var(--primary-color)] rounded-full flex items-center justify-center hover:bg-[var(--accent-color)] transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-[var(--primary-color)] rounded-full flex items-center justify-center hover:bg-[var(--accent-color)] transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-[var(--primary-color)] rounded-full flex items-center justify-center hover:bg-[var(--accent-color)] transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-[var(--primary-color)] rounded-full flex items-center justify-center hover:bg-[var(--accent-color)] transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-[var(--font-family-heading)] font-bold mb-6">
+          Quick Links
+        </h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="#" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#faq" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-xl font-[var(--font-family-heading)] font-bold mb-6">
+          Our Services
+        </h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="#services" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Breakdown Recovery
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Accident Recovery
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Long Distance Transport
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              24/7 Emergency Service
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="text-[var(--light-text-color)] opacity-80 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] transition-all duration-300 inline-flex items-center">
+              <i class="fas fa-chevron-right text-xs mr-2"></i>
+              Heavy Vehicle Recovery
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl font-[var(--font-family-heading)] font-bold mb-6">
+          Get In Touch
+        </h3>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <i class="fas fa-phone-alt text-[var(--accent-color)] mt-1 mr-3"></i>
+            <div>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)] text-sm mb-1">
+                24/7 Hotline
+              </p>
+              <a href="tel:+1234567890" class="text-[var(--light-text-color)] font-[var(--font-family-body)] font-bold hover:text-[var(--accent-color)] transition-colors duration-300">
+                +1 (234) 567-890
+              </a>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-envelope text-[var(--accent-color)] mt-1 mr-3"></i>
+            <div>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)] text-sm mb-1">
+                Email Us
+              </p>
+              <a href="mailto:info@driverstop.com" class="text-[var(--light-text-color)] font-[var(--font-family-body)] hover:text-[var(--accent-color)] transition-colors duration-300">
+                info@driverstop.com
+              </a>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-[var(--accent-color)] mt-1 mr-3"></i>
+            <div>
+              <p class="text-[var(--light-text-color)] opacity-80 font-[var(--font-family-body)] text-sm mb-1">
+                Service Area
+              </p>
+              <p class="text-[var(--light-text-color)] font-[var(--font-family-body)]">
+                Available Nationwide
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Emergency CTA -->
+        <a href="tel:+1234567890" class="inline-flex items-center mt-6 bg-[var(--accent4-color)] text-[var(--light-text-color)] px-6 py-3 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold hover:bg-[var(--accent-color)] transition-all duration-300 shadow-lg transform hover:scale-105">
+          <i class="fas fa-exclamation-triangle mr-2"></i>
+          Emergency Service
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-[var(--light-text-color)] border-opacity-20 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[var(--light-text-color)] opacity-70 font-[var(--font-family-body)] text-sm text-center md:text-left">
+          © 2025 DriverStop. All rights reserved. Your trusted car recovery
+          partner.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="#" class="text-[var(--light-text-color)] opacity-70 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] text-sm transition-all duration-300">
+            Privacy Policy
+          </a>
+          <a href="#" class="text-[var(--light-text-color)] opacity-70 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] text-sm transition-all duration-300">
+            Terms of Service
+          </a>
+          <a href="#" class="text-[var(--light-text-color)] opacity-70 hover:opacity-100 hover:text-[var(--accent-color)] font-[var(--font-family-body)] text-sm transition-all duration-300">
+            Cookie Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div></div><script src="/embed/main.umd.js"></script>
+      </div>
+    </div>
+  </body></html>
