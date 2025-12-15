@@ -3,55 +3,219 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UAE Car Recovery Service</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>DriverStop — Car Recovery Service</title>
+
+  <!-- Tailwind CSS (production build from CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00557d',
+            accent: '#ffa500',
+            accent2: '#f59e0b',
+            accent3: '#10b981',
+            accent4: '#ec4899',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome (icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pEYy2WvPd0SdV/YqgSEF4iB1E1p1dF6vTGHTvP7R+5Cwcr9VMnF7XNqk5i11J6nMC9q4nGkrF0+P0jKsv4qg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      --light-text-color: #ffffff;
+      --dark-text-color: #1f2937;
+      --gray-text-color: #6b7280;
+      --light-background-color: #f8fafc;
+      --medium-background-color: #e5e7eb;
+      --light-border-color: #d1d5db;
+      --button-rounded-radius: 0.75rem;
+    }
+  </style>
 </head>
-<body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Fast & Reliable Car Recovery Across the UAE</h1>
-    <p>Book and track your recovery truck instantly.</p>
-    <a href="#booking" class="btn primary-btn">Book Recovery Now</a>
-  </header>
+<body class="font-sans text-gray-800">
 
-  <!-- Features Section -->
-  <section class="features">
-    <h2>Our Services</h2>
-    <div class="feature-cards">
-      <div class="card">
-        <h3>24/7 Support</h3>
-        <p>Emergency recovery any time, any place in UAE.</p>
-      </div>
-      <div class="card">
-        <h3>Live Tracking</h3>
-        <p>Track your recovery truck in real-time.</p>
-      </div>
-      <div class="card">
-        <h3>All Vehicle Types</h3>
-        <p>Towing for cars, SUVs, and light trucks.</p>
+<!-- ROOT PAGE CONTENT -->
+<div class="w-full h-auto overflow-x-hidden">
+
+  <!-- (PASTE YOUR NAV / HEADER HERE if needed) -->
+
+  <!-- YOUR FIRST SECTION -->
+  <section class="bg-primary text-white text-center py-20 relative">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl font-bold mb-4">DriverStop — Fast & Reliable Car Recovery</h1>
+      <p class="text-lg mb-6">Quick dispatch • Safe transport • Transparent pricing</p>
+      <a href="#contact" class="bg-accent px-8 py-4 text-xl font-semibold rounded-lg hover:bg-accent2 transition">Get Help Now</a>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 text-left">
+        <div class="flex items-start">
+          <div class="w-12 h-12 bg-white text-primary rounded-lg flex items-center justify-center mr-4">
+            <i class="fas fa-clock text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white mb-1">Rapid Response</h3>
+            <p>Quick dispatch to your location</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
+            <i class="fas fa-map-marked-alt text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white mb-1">Any Destination</h3>
+            <p>We transport where you need to go</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="w-12 h-12 bg-accent3 rounded-lg flex items-center justify-center mr-4">
+            <i class="fas fa-user-shield text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white mb-1">Professional Care</h3>
+            <p>Expert drivers, secure handling</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Booking Form -->
-  <section id="booking" class="booking-section">
-    <h2>Book Your Recovery Truck</h2>
-    <form class="booking-form">
-      <input type="text" name="name" placeholder="Your Full Name" required/>
-      <input type="tel" name="phone" placeholder="Phone Number" required/>
-      <input type="text" name="location" placeholder="Pickup Location" required/>
-      <input type="text" name="destination" placeholder="Drop-off Location" required/>
-      <button type="submit" class="btn secondary-btn">Submit Booking</button>
-    </form>
-    <p class="note">* After submission, we will contact you to confirm and share tracking details.</p>
+  <!-- PROCESS STEPS -->
+  <section class="py-20 bg-light-background-color" id="process">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get Back on Track in 3 Easy Steps</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Step 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mx-auto mb-4">
+            <i class="fas fa-phone-alt text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Contact Us</h3>
+          <p>Call or request a tow with your location and vehicle details.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="flex items-center justify-center w-16 h-16 bg-accent text-white rounded-full mx-auto mb-4">
+            <i class="fas fa-truck text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">We Dispatch</h3>
+          <p>Our nearest truck is sent with an ETA.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="flex items-center justify-center w-16 h-16 bg-accent3 text-white rounded-full mx-auto mb-4">
+            <i class="fas fa-map-marker-alt text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Safe Delivery</h3>
+          <p>Your vehicle is transported securely to your destination.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 UAE Car Recovery Service. All rights reserved.</p>
-    <p>Call us anytime: +971-XXXXXXXXX</p>
-  </footer>
+  <!-- FAQ -->
+  <section class="py-20 bg-white" id="faq">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+
+      <!-- Accordion -->
+      <div class="space-y-4 max-w-3xl mx-auto">
+        <div class="border rounded-lg p-4">
+          <button class="w-full text-left font-semibold text-lg faq-btn">How much does car recovery cost?</button>
+          <div class="mt-2 hidden faq-content">
+            <p>Costs vary based on distance, time, and vehicle type. We provide transparent quotes before service.</p>
+          </div>
+        </div>
+        <div class="border rounded-lg p-4">
+          <button class="w-full text-left font-semibold text-lg faq-btn">What areas do you cover?</button>
+          <div class="mt-2 hidden faq-content">
+            <p>We cover metropolitan and surrounding regions with long-distance options available.</p>
+          </div>
+        </div>
+        <div class="border rounded-lg p-4">
+          <button class="w-full text-left font-semibold text-lg faq-btn">Will my insurance cover the towing cost?</button>
+          <div class="mt-2 hidden faq-content">
+            <p>Many policies include towing. We can bill directly or provide documentation for reimbursement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="py-20 bg-light-background-color" id="contact">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
+
+      <div class="max-w-3xl mx-auto">
+        <form
+          action="https://formsubmit.co/your@email.com"
+          method="POST"
+          class="space-y-6 bg-white p-8 rounded-lg shadow-lg"
+        >
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+          <div>
+            <label class="block font-medium mb-2">Your Name *</label>
+            <input type="text" name="name" required class="w-full border border-light-border-color px-4 py-3 rounded-lg focus:outline-none focus:border-primary"/>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-2">Phone Number *</label>
+            <input type="tel" name="phone" required class="w-full border border-light-border-color px-4 py-3 rounded-lg"/>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-2">Email Address *</label>
+            <input type="email" name="email" required class="w-full border border-light-border-color px-4 py-3 rounded-lg"/>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-2">Service Type</label>
+            <select name="service" class="w-full border border-light-border-color px-4 py-3 rounded-lg">
+              <option>Emergency Towing</option>
+              <option>Roadside Assistance</option>
+              <option>Accident Recovery</option>
+              <option>Vehicle Transport</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-2">Your Message *</label>
+            <textarea name="message" rows="5" required class="w-full border border-light-border-color px-4 py-3 rounded-lg"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-accent transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FAQ Expand/Collapse Script -->
+<script>
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      content.classList.toggle('hidden');
+    });
+  });
+</script>
 
 </body>
 </html>
+
