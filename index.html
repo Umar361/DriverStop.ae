@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Car Recovery Service</title>
 
   <!-- Tailwind CSS CDN -->
@@ -12,10 +12,10 @@
       theme: {
         extend: {
           colors: {
-            primary: '#00557d',
-            accent: '#ffa500',
-            accent2: '#f59e0b',
-            accent3: '#10b981',
+            primary: '#004e92',
+            accent: '#03a9f4',
+            darkbg: '#0f172a',
+            lighttxt: '#f8fafc',
           }
         }
       }
@@ -31,11 +31,10 @@
     referrerpolicy="no-referrer"
   />
 </head>
-
 <body class="font-sans text-gray-800">
 
   <!-- HEADER -->
-  <nav class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+  <nav class="fixed top-0 left-0 right-0 bg-white shadow z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
       <div class="text-2xl font-bold text-primary">
@@ -52,66 +51,73 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section id="home" class="relative pt-24 pb-16 bg-cover bg-center" 
-           style="background-image: url('https://pixabay.com/get/gc5e2a8bb2f3d14b80f5dac18f0f31b2a79bdfcd41bcd8e0d96f5b3c9941a57c754b4eec141d2af4c68be0430bf4df823a5fe6018a4f0763b0b5f620ad5797781_1280.jpg');">
-    <div class="bg-black bg-opacity-50 w-full h-full absolute inset-0"></div>
+  <!-- HERO with overlay -->
+  <section id="home" class="relative pt-24 pb-20 bg-cover bg-center" 
+           style="background-image: url('/mnt/data/Screenshot 2025-12-15 at 13.23.08.png');">
+    <!-- Semi-dark overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
 
-    <div class="relative container mx-auto px-6 text-center text-white">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-        24/7 Emergency Response Available
-      </h2>
-      <p class="text-xl md:text-2xl mb-6">
-        Stranded? Get Fast, Reliable Car Recovery To Any Destination
-      </p>
-      <p class="max-w-2xl mx-auto text-lg opacity-90 mb-8">
-        Professional recovery trucks ready to transport your broken-down
-        vehicle wherever you need it. No stress, no delays—just dependable
-        service when you need it most.
+    <div class="relative container mx-auto px-6 text-white">
+      <!-- Badge -->
+      <div class="inline-block bg-accent text-white px-4 py-2 rounded-full font-semibold text-sm mb-4">
+        <i class="fas fa-check-circle mr-2"></i>24/7 Emergency Response Available
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 max-w-3xl">
+        Stranded? Get Fast, Reliable <span class="text-accent">Car Recovery To Any Destination</span>
+      </h1>
+
+      <!-- Sub-text -->
+      <p class="text-lg sm:text-xl opacity-90 max-w-2xl mb-8">
+        Professional recovery trucks ready to transport your broken-down vehicle wherever you need it. 
+        No stress, no delays—just dependable service when you need it most.
       </p>
 
-      <div class="space-x-4 mb-4">
-        <a href="#contact" class="bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent2 transition">
-          Call Now for Help
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap gap-4 items-center mb-6">
+        <a href="#contact" class="bg-accent px-6 py-3 rounded-lg text-white font-semibold hover:bg-accent/90 transition">
+          <i class="fas fa-phone-alt mr-2"></i>Call Now for Help
         </a>
         <a href="#services" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-          View Our Services
+          View Our Services <i class="fas fa-arrow-right ml-2"></i>
         </a>
       </div>
 
-      <p class="text-sm opacity-80 mt-4 font-medium">
+      <!-- Pricing/benefits small line -->
+      <p class="text-sm opacity-80 flex items-center gap-2 mb-10">
+        <i class="fas fa-check-circle text-accent"></i>
         Quick dispatch • Safe transport • Transparent pricing
       </p>
-    </div>
-  </section>
 
-  <!-- FEATURES -->
-  <section id="features" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-        <!-- Rapid Response -->
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mb-4">
+      <!-- Features icons row -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center text-lg">
             <i class="fas fa-clock"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2">Rapid Response</h3>
-          <p>Quick dispatch to your location</p>
+          <div class="">
+            <h3 class="font-bold text-lg">Rapid Response</h3>
+            <p class="text-sm opacity-90">Quick dispatch to your location</p>
+          </div>
         </div>
-        <!-- Any Destination -->
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center text-2xl mb-4">
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center text-lg">
             <i class="fas fa-map-marked-alt"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2">Any Destination</h3>
-          <p>We transport where you need to go</p>
+          <div class="">
+            <h3 class="font-bold text-lg">Any Destination</h3>
+            <p class="text-sm opacity-90">We transport where you need to go</p>
+          </div>
         </div>
-        <!-- Professional Care -->
-        <div class="flex flex-col items-center">
-          <div class="w-16 h-16 bg-accent3 text-white rounded-full flex items-center justify-center text-2xl mb-4">
+        <div class="flex items-start space-x-3">
+          <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center text-lg">
             <i class="fas fa-user-shield"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2">Professional Care</h3>
-          <p>Expert drivers, secure handling</p>
+          <div class="">
+            <h3 class="font-bold text-lg">Professional Care</h3>
+            <p class="text-sm opacity-90">Expert drivers, secure handling</p>
+          </div>
         </div>
       </div>
     </div>
